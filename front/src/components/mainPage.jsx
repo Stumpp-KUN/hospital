@@ -11,7 +11,7 @@ const MainPage = () =>{
       };
 
     return(
-        <div className="main">
+        <div className="mainik">
             
             <div className="mainGuide">
             <Instruction onInstructionChange={handleInstructionChange} />
@@ -32,7 +32,9 @@ const MainPage = () =>{
                 <button class="button-64" role="button"><span class="text">Оператор</span></button>
                 </Link>
                 <button class="button-64" role="button"><span class="text">Координатор</span></button>
+                <Link to="/adminauth" className='link'>
                 <button class="button-64" role="button"><span class="text">Администратор</span></button>
+                </Link>
                 <button class="button-64" role="button"><span class="text">Глав Администратор</span></button>
                 </div>
             </div>

@@ -1,0 +1,140 @@
+.auth{
+    display: flex;
+    align-items: center; 
+}
+
+.info{
+    height: 100vh;
+    width: 50%;
+    background-color: #E7E0FB;
+    padding-top: 20%;
+    font-size: 36px;
+    font-family: Noto Sans,sans-serif;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 70%;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+    right: 30%;
+
+}
+.form__field {
+    border: 3px solid #6750A4;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 10px;
+    background: transparent;
+    transition: border-color 0.2s;
+    width: 400px;
+    position: relative; 
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    padding-top: 5px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: black;
+    user-select: none;
+    padding-left: 10px;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: -7px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6750A4;
+}
+
+.form__field:not(:placeholder-shown) ~ .form__label {
+    top: -7px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6750A4;
+}
+
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+.form__group.field .under {
+    margin-top: 5px;
+    padding-left: 10px;
+    color: #49454F;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.clear-icon {
+    position: absolute;
+    top: 35%;
+    left: 71%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 25px; 
+}
+
+
+.button-18 {
+    margin-top: 45px;
+    margin-right: 70%;
+    background-color: #6750A4;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+  }
+  
+  .button-18:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+  }
+
+
