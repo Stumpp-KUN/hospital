@@ -30,7 +30,7 @@ const AdminAuth = () =>{
             
             const jsonData = JSON.stringify(data);
             
-            const response = await axios.post("https://ec2-13-49-16-252.eu-north-1.compute.amazonaws.com:5000/api/auth/login", jsonData, {
+            const response = await axios.post("http://localhost:443/api/auth/login", jsonData, {
                 headers: {
                     "Content-Type": "application/json",
                 },
