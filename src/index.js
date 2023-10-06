@@ -10,10 +10,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/">
-          <Redirect to="/adminauth"></Redirect> 
-        </Route>
-        <Route path="/adminauth" element={<AdminAuth />} />
+        <Route path="/" element={<AdminAuth />} />
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </Router>
