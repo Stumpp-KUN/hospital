@@ -23,11 +23,10 @@ const AdminAuth = () =>{
 
     const handleLogin = async () => {
         try {
-            const response = await axios.get("http://ec2-13-49-16-252.eu-north-1.compute.amazonaws.com:5000/api/auth/login", {
-                params: {
-                    login: username,
-                    password: password,
-                },
+            const response = await axios.post("http://ec2-13-49-16-252.eu-north-1.compute.amazonaws.com:5000/api/auth/login", {
+                login: username,
+                password: password,
+            }, {
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -48,6 +47,7 @@ const AdminAuth = () =>{
             setInputImage("error.png");
         }
     };
+    
 
     return(
         <div className="auth">
