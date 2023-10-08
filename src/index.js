@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<AdminAuth />} />
+        <Route path="/adminauth" element={<AdminAuth />} />
         <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </Router>
